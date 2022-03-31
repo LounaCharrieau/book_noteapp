@@ -1,13 +1,24 @@
 body{
     background-color: #E5E5E5;
+    text-shadow: #2D2A5D;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1{
     font-family: 'Lobster', cursive;
     text-align: center;
+    font-size: 70px;
 }
 
 h2{
     font-family: 'Roboto', sans-serif;
-    font-weight:bold;
+    font-size:32px;
+    font-weight:bolder;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    text-align: center;
 }
