@@ -1,31 +1,44 @@
-<p id="notice"><%= notice %></p>
+<head>
+  <link href="../../assets/stylesheets/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@100&display=swap" rel="stylesheet"> 
 
-<h1>Donne ton avis sur une oeuvre !</h1>
+</head>
+<body>
+  <p id="notice"><%= notice %></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title of the work</th>
-      <th>Theme</th>
-      <th>Comment</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <h1>Book Notes</h1>
+  <h2>Reviews</h2>
 
-  <tbody>
-    <% @reviews.each do |review| %>
+
+  <table>
+    <thead>
       <tr>
-        <td><%= review.title %></td>
-        <td><%= review.theme %></td>
-        <td><%= review.comment %></td>
-        <td><%= link_to 'Show', review %></td>
-        <td><%= link_to 'Edit', edit_review_path(review) %></td>
-        <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Title</th>
+        <th>Theme</th>
+        <th>Comment</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @reviews.each do |review| %>
+        <tr>
+          <td><%= review.title %></td>
+          <td><%= review.theme %></td>
+          <td><%= review.comment %></td>
+          <td><%= link_to 'Show', review %></td>
+          <td><%= link_to 'Edit', edit_review_path(review) %></td>
+          <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 
-<%= link_to 'New Review', new_review_path %>
+  <br>
+
+  <%= link_to 'New Review', new_review_path %>
+</body>
