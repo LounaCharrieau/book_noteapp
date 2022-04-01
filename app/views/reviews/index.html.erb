@@ -16,9 +16,9 @@
 
   <h1>Book Notes</h1>
   <br/>
-  <p>Bienvenue sur Book Notes ! </p> 
-  <p>Ici, vous trouverez une multitude d’avis et de critiques sur un panel de livres, films, séries, animés, etc. </p>
-  <p>Vous découvrirez ainsi de nouvelles oeuvres et vous pourrez donner votre avis sur l’une d’elle !</p>
+  <p class="textintro">Bienvenue sur Book Notes ! </p> 
+  <p class="texteintro2">Ici, vous trouverez une multitude d’avis et de critiques sur un panel de livres, films, séries, animés, etc. </p>
+  <p class="textintro3">Vous découvrirez ainsi de nouvelles oeuvres et vous pourrez donner votre avis sur l’une d’elle !</p>
   <h2>Reviews</h2>
 
 
@@ -38,18 +38,25 @@
           <td><%= review.title %></td>
           <td><%= review.theme %></td>
           <td><%= review.comment %></td>
-          <td><%= link_to 'Show', review %></td>
+
+        
+            <td><%= link_to 'show', review %></td>
+    
           <td><%= link_to 'Edit', edit_review_path(review) %></td>
           <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
+
       <% end %>
     </tbody>
   </table>
 
   <br>
 
-  <%= link_to 'New Review' , new_review_path %>
- 
+
+<button  type="button" class="btn btn-primary">
+<%= link_to 'New Review' , new_review_path %>
+</button>
+
 
 
 </body>

@@ -1,6 +1,5 @@
 body{
     background-color: #E5E5E5;
-    color: #2D2A5D;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -8,17 +7,45 @@ h1{
     font-family: 'Lobster', cursive;
     text-align: center;
     font-size: 60px;
+    color: #2D2A5D;
 }
 
 h2{
     font-family: 'Roboto', sans-serif;
     font-size:25px;
     font-weight:bolder;
+    color: #2D2A5D;
 }
 
 p{
     font-family: 'Roboto', sans-serif;
     font-size:20px;
     font-weight: bold;
+    color: #2D2A5D;
+}
+
+
+.textintro{
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    color: #2D2A5D;
     text-align: center;
 }
+.textintro2{
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    color: #2D2A5D;
+    text-align: center;
+}
+
+.textintro3{
+    font-family: 'Roboto', sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    color: #2D2A5D;
+    text-align: center;
+}
+
+
