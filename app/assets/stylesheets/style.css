@@ -9,17 +9,17 @@ body{
 }
 
 
-
 h1{
     font-family: 'Roboto', sans-serif;
-    font-size:25px;
+    font-size:20px;
     font-weight:bolder;
     color: #2D2A5D;
+    text-align: center;
 }
 
 h2{
     font-family: 'Roboto', sans-serif;
-    font-size:20px;
+    font-size:18px;
     font-weight:bolder;
     color: #2D2A5D;
 }
@@ -27,33 +27,12 @@ h2{
 
 p{
     font-family: 'Roboto', sans-serif;
-    font-size:25px;
+    font-size:15px;
     font-weight: bold;
     color: #2D2A5D;
 }
 
 
-.textintro{
-    font-family: 'Roboto', sans-serif;
-    font-size:20px;
-    font-weight: bold;
-    color: #2D2A5D;
-    text-align: center;
-}
-.textintro2{
-    font-family: 'Roboto', sans-serif;
-    font-size:20px;
-    font-weight: bold;
-    color: #2D2A5D;
-    text-align: center;
-}
-
-.textintro3{
-    font-family: 'Roboto', sans-serif;
-    font-size:20px;
-    text-align: center;
-
-}
 
 .logo{
     display: flex;
