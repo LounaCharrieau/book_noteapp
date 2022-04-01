@@ -15,6 +15,11 @@
     <a class="logo" href="/reviews">
       <%= image_tag 'logoapp.png', width:(230), height:(40)%>
     </a>
+    <br/>
+    <br/>
+    <h1 class="textintro">Bienvenue sur Book Notes !
+  <br/>Ici, vous trouverez une multitude d’avis et de critiques sur un panel de livres, films, séries, animés, etc.
+  <br/>Vous découvrirez ainsi de nouvelles oeuvres et vous pourrez donner votre avis sur l’une d’elle !</h1>
 </header>
 
 
@@ -23,12 +28,14 @@
 
  
     <br/>
-  <h1 class="textintro">Bienvenue sur Book Notes !</h1>
-  <h1 class="texteintro2">Ici, vous trouverez une multitude d’avis et de critiques sur un panel de livres, films, séries, animés, etc. </h1>
-  <h1 class="textintro3">Vous découvrirez ainsi de nouvelles oeuvres et vous pourrez donner votre avis sur l’une d’elle !</h1>
+  
  
+
   <h2>Reviews</h2>
 
+<button type="button" class="btn btn-outline-danger">
+<%= link_to 'New Review' , new_review_path %>
+</button>
 
   <table>
     <thead>
@@ -56,11 +63,5 @@
   </table>
 
   <br>
-
-<button type="button" class="btn btn-outline-danger">
-<%= link_to 'New Review' , new_review_path %>
-</button>
-
-
 
 </body>
