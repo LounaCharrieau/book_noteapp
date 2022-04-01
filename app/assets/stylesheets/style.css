@@ -3,23 +3,31 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-h1{
-    font-family: 'Lobster', cursive;
-    text-align: center;
-    font-size: 60px;
-    color: #2D2A5D;
+.logo{
+    align-content: center;
+
 }
 
-h2{
+
+
+h1{
     font-family: 'Roboto', sans-serif;
     font-size:25px;
     font-weight:bolder;
     color: #2D2A5D;
 }
 
-p{
+h2{
     font-family: 'Roboto', sans-serif;
     font-size:20px;
+    font-weight:bolder;
+    color: #2D2A5D;
+}
+
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size:25px;
     font-weight: bold;
     color: #2D2A5D;
 }
@@ -43,6 +51,11 @@ p{
 .textintro3{
     font-family: 'Roboto', sans-serif;
     font-size:20px;
+    text-align: center;
 
 }
 
+.logo{
+    display: flex;
+    justify-content: center;
+}

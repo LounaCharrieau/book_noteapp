@@ -9,12 +9,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
 
-
 </head>
+
+<header>  
+    <a class="logo" href="/reviews">
+      <%= image_tag 'logoapp.png'%>
+    </a>
+</header>
+
+
 <body>
   <p id="notice"><%= notice %></p>
 
-  <h1>Book Notes</h1>
+ 
     <br/>
   <p class="textintro">Bienvenue sur Book Notes ! </p> 
   <p class="texteintro2">Ici, vous trouverez une multitude d’avis et de critiques sur un panel de livres, films, séries, animés, etc. </p>
@@ -38,9 +45,9 @@
           <td><%= review.title %></td>
           <td><%= review.theme %></td>
           <td><%= review.comment %></td>
-            <td><%= link_to 'show', review %></td>
-          <td><%= link_to 'Edit', edit_review_path(review) %></td>
-          <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to image_tag("show.png", width:(25), height:25), review %></td>
+          <td><%= link_to image_tag("modif.png", width:(25), height:25), edit_review_path(review) %></td>
+          <td><%= link_to image_tag("poubelle.png", width:(25), height:25), review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>
 
       <% end %>
