@@ -38,7 +38,8 @@
           <td><%= review.title %></td>
           <td><%= review.theme %></td>
           <td><%= review.comment %></td>
-
+            <td><%= link_to 'show', review %></td>
+      
         
             <td><%= link_to 'show', review %></td>
     
@@ -52,13 +53,11 @@
 
   <br>
 
-
-
-
-
 <button type="button" class="btn btn-outline-danger">
 <%= link_to 'New Review' , new_review_path %>
 </button>
+
+<h1>Bonjour, j'espère que ça vous a plus ! A bientôt !</h1>
 
 
 </body>
